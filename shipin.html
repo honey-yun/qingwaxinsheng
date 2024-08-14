@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烟台大学青瓦新生</title>
+    <link rel="stylesheet" href="css\more.css">
+</head>
+<style>
+  header {
+ background-image: url('photos/beij1.jpg');
+ background-size: cover;
+ background-position: center;
+}
+body {
+    background-attachment: fixed;
+   background-image: url('photos/背景.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+  }
+</style>
+<body>
+
+  <header>
+    <div class="logo-container">
+        <img src="photos\队徽.jpg" alt="队徽" class="logo"> <!-- LOGO -->
+        <span class="title">烟台大学青瓦新生</span>
+    </div>
+        <div class="nav">
+            <ul class="nvalist">
+                <li class="btli"><a href="index.html">首页</a></li>
+                <li class="btli"><a href="chengyuan.html">关于我们</a></li>
+                <li class="btli"><a href="gucunluo.html">古村落</a></li>
+                <li class="btli"><a href="jianzhuguan.html">建筑馆</a>
+                    <ul class="droplist">
+                        <li><a href="#">下拉格</a></li>
+                        <li><a href="#">下拉格</a></li>
+                        <li><a href="#">下拉格</a></li>
+                        <li><a href="#">下拉格</a></li>
+                        <li><a href="#">下拉格</a></li>
+                     </ul>
+                </li>
+                <li class="btli"><a href="renwenguan.html">人文馆</a>
+          
+                </li>
+                <li class="btli"><a href="wenchuangguan.html">文创馆</a>
+                    <ul class="droplist">
+                        <li><a href="#">下拉格</a></li>
+                        <li><a href="#">下拉格</a></li>
+                        <li><a href="#">下拉格</a></li>
+                        <li><a href="#">下拉格</a></li>
+                        <li><a href="#">下拉格</a></li>
+                     </ul>
+                </li>
+            </ul>
+          </div>
+    </header>
+    <!-- 视频 -->
+    <main>
+        <div id="video-container" class="video-grid">
+            <!-- 视频卡片将由 JavaScript 动态添加 -->
+        </div>
+        <div class="pagination">
+            <button id="prev-button" class="page-button">上一页</button>
+            <button id="next-button" class="page-button">下一页</button>
+        </div>
+    </main>
+
+<section id="welcome-section" class="content-section">
+    <h2>欢迎来到我们的实践队伍！</h2>
+    <p>加入我们一起创造未来！</p >
+        <li><a href="more.html">了解更多</a></li>
+</section>
+<div id="sticky-banner" class="sticky-banner">
+  <p>&copy; 2023 实践队伍。版权所有。</p >
+</div>
+<!-- 返回顶部按钮 -->
+<a href="" class="back-to-top" id="back-to-top" title="返回顶部">回到顶部↑</a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+   // Initialize AOS library
+   AOS.init();
+
+   // Smooth scrolling to sections
+   document.addEventListener('DOMContentLoaded', function() {
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function(e) {
+               e.preventDefault();
+               document.querySelector(this.getAttribute('href')).scrollIntoView({
+                   behavior: 'smooth'
+               });
+           });
+       });
+   });
+
+   // Back to top button functionality
+   const backToTopButton = document.getElementById('back-to-top');
+
+   window.addEventListener('scroll', () => {
+       if (window.scrollY > 200) {
+           backToTopButton.style.display = 'block';
+       } else {
+           backToTopButton.style.display = 'none';
+       }
+   });
+
+   backToTopButton.addEventListener('click', (e) => {
+       e.preventDefault();
+       window.scrollTo({
+           top: 0,
+           behavior: 'smooth'
+       });
+   });
+</script>
+<script src="./js/about.js"></script>
+</body>
+<script src="./js/lunfatu.js"></script>
+<script src="./js/animations.js"></script>
+<script src="./js/shipin.js"></script>
+</html>
