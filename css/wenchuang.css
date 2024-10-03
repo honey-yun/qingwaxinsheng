@@ -287,7 +287,53 @@
     background-color: #5290d2;
     transform: scale(1.1);
   }
+/* About Section */
+.about {
 
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: 'KaiTi', '楷体', serif; /* 楷体字体 */
+     }
+     
+     .about h2 {
+  font-size: 36px; /* 加大标题字体 */
+  color: #333;
+  text-align: left;
+  margin-bottom: 15px;
+     }
+     
+     .about p {
+  font-size: 20px; /* 加大段落字体 */
+  color: #666;
+     }
+     
+     /* Contact Info Section */
+     .contact-info {
+  margin-top: 20px;
+     }
+     
+     .contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd; /* 底部边框增加分隔 */
+  padding-bottom: 10px;
+     }
+     
+     /* Fixed Image Size */
+     .contact-item img {
+  width: 60px; /* 加大图片尺寸 */
+  height: 60px;
+  margin-right: 15px;
+  object-fit: cover;
+  border-radius: 50%; /* 圆形图标 */
+  cursor: pointer; /* 鼠标悬浮时显示手型，表示可点击 */
+     }
+     
+     .contact-item p {
+  font-size: 20px; /* 加大字体 */
+  color: #333;
+     }
 
 
 
